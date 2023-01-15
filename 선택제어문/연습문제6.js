@@ -13,12 +13,16 @@
 
 function Most(a, b, c) {
   if (a > b) {
-    console.log(a);
+    if (a > c) {
+      console.log(a);
+    } else console.log(c);
   } else if (b > c) {
     console.log(b);
   } else console.log(c);
 }
 Most(1, 5, 4);
-Most(4, 5, 1);
 Most(1, 4, 5);
+Most(4, 5, 1);
+Most(4, 1, 5);
 Most(5, 1, 4);
+Most(5, 4, 1);
